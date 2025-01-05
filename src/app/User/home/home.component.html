@@ -1,0 +1,19 @@
+<!-- <h1>Home Start  UserName</h1>
+<div *ngIf="userFirstName">
+    <p>User: {{ userFirstName }}</p>
+  </div>
+   
+  -->
+
+  <div style="padding: 20px; max-width: 600px; margin: auto;">
+  <h1>Telegram Web App Information</h1>
+
+  <p><strong>First Name:</strong> {{ user?.first_name || 'N/A' }}</p>
+  <p><strong>Last Name:</strong> {{ user?.last_name || 'N/A' }}</p>
+  <p><strong>Username:</strong> {{ user?.username || 'N/A' }}</p>
+  <p><strong>User ID:</strong> {{ user?.id || 'N/A' }}</p>
+  <p><strong>Chat Info:</strong> {{ chat ? (chat?.title || 'Chat Available') : 'N/A' }}</p>
+  <p><strong>Start Parameter:</strong> {{ startParam || 'N/A' }}</p>
+  <p><strong>Auth Date:</strong> {{ authDate || 'N/A' }}</p>
+
+</div>
